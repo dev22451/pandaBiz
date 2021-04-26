@@ -56,3 +56,21 @@ body{
 .contact .contact-span{
   font-size: 20px;
 }
+
+.signupform{
+  margin-top: 35px;
+  background: #fff;
+  padding: 30px;
+}
+
+.signupform-heading{
+  font-size: 18px;
+}
+
+.label-form{
+  font-size: 13px;
+}
+
+.terms{
+  font-size: 11px;
+}

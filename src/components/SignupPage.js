@@ -1,6 +1,7 @@
 import device from '../Images/device.png'
 import icon1 from '../Images/trial-icon-1.png'
 import logo from '../Images/salesforce-logo.png'
+import SignupForm from './SignupForm'
 
 function SignupPage() {
     return (
@@ -85,7 +86,7 @@ function SignupPage() {
                     <p>Call us at <b>000 800 001 6000</b></p>
                 </div>
             </div>
-            <div className="col-md-6"></div>
+            <div className="col-md-4"><SignupForm /></div>
         </div>
 
     )

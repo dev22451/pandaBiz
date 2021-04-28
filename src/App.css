@@ -1,5 +1,5 @@
 body{
-  background-image: url(//www.salesforce.com/content/dam/web/en_us/www/images/form/general/background-path.jpg);
+  background-image: url('/src/Images/back.jpg');
   overflow-x: hidden;
   background-size: cover;
   background-position: bottom;
@@ -58,19 +58,26 @@ body{
 }
 
 .signupform{
-  margin-top: 35px;
+  margin-top: 40px;
   background: #fff;
   padding: 30px;
 }
 
-.signupform-heading{
-  font-size: 18px;
+.terms{
+  font-size: 11px;
+  color: #181818;
+  margin: 20px 0px;
 }
 
 .label-form{
   font-size: 13px;
 }
 
-.terms{
-  font-size: 11px;
+.error{
+  color: red;
+  font-size: 12px;
+}
+
+.checkboxinput{
+  margin-left: 10px;  
 }

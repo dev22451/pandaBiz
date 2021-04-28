@@ -1,6 +1,5 @@
 import device from '../Images/device.png'
 import icon1 from '../Images/trial-icon-1.png'
-import logo from '../Images/salesforce-logo.png'
 import SignupForm from './SignupForm'
 
 function SignupPage() {
@@ -13,7 +12,7 @@ function SignupPage() {
                 <div className="head-div container-fluid">
                     <div className="d-flex">
                         <div className="logo">
-                            <img src={logo} />
+                            <h4>PandaBiz</h4>
                         </div>
                         <div className="head">
                             <span className="headfirst">Get Your FREE 30-Days Trial Now!</span><br />

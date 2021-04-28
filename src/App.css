@@ -57,6 +57,8 @@ body{
   font-size: 20px;
 }
 
+/* form css */
+
 .signupform{
   margin-top: 40px;
   background: #fff;
@@ -66,7 +68,7 @@ body{
 .terms{
   font-size: 11px;
   color: #181818;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
 
 .label-form{

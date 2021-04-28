@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
-import '../App.css'
 
 const MyTextInput = ({ label, ...props }) => {
     // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
@@ -44,7 +42,7 @@ const MySelect = ({ label, ...props }) => {
     return (
         <div>
             <label htmlFor={props.id || props.name} className="label-form">{label}</label>
-            <select className="form-control  form-control-sm" {...field} {...props} />
+            <select className="form-select form-select-sm" {...field} {...props} />
             {meta.touched && meta.error ? (
                 <div className="error">{meta.error}</div>
             ) : null}
@@ -64,6 +62,8 @@ const SignupForm = () => {
                     email: '',
                     acceptedTerms: false, // added for our checkbox
                     jobType: '', // added for our select
+                    password: '',
+                    changepassword: ''
                 }}
                 validationSchema={Yup.object({
                     firstName: Yup.string()
@@ -84,6 +84,17 @@ const SignupForm = () => {
                     company: Yup.string()
                         .max(15, 'Must be 15 characters or less')
                         .required('Required'),
+                    password: Yup.string()
+                        .required('No password provided.')
+                        .min(8, 'Password is too short - should be 8 chars minimum.')
+                        .matches(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$/, 'Password can only contain Latin letters.'),
+                    confirmpassword: Yup.string().when("password", {
+                        is: val => (val && val.length > 0 ? true : false),
+                        then: Yup.string().oneOf(
+                            [Yup.ref("password")],
+                            "Both password need to be the same"
+                        )
+                    }),
                     jobType: Yup.string()
                         .oneOf(
                             ['Sales Manager', 'Marketing/ PR Manager', 'Customer Service Manager', 'CxO / General Manager',
@@ -99,7 +110,8 @@ const SignupForm = () => {
                             'Invalid emloyees'
                         )
                         .required('Required'),
-                })}
+                })
+                }
                 onSubmit={(values, { setSubmitting }) => {
                     setTimeout(() => {
                         alert(JSON.stringify(values, null, 2));
@@ -188,6 +200,21 @@ const SignupForm = () => {
                         </div>
                     </div>
 
+
+                    <MyTextInput
+                        label="Password"
+                        name="password"
+                        type="password"
+                        placeholder=""
+                    />
+
+                    <MyTextInput
+                        label="Confirm Password"
+                        name="confirmpassword"
+                        type="password"
+                        placeholder=""
+                    />
+
                     <br />
 
                     <div className="row">
@@ -199,7 +226,7 @@ const SignupForm = () => {
                     <p className="terms">By registering, you confirm that you agree to the storing and processing of
                     your personal data by Salesforce as described in the
                         <a href="https://www.hangingpanda.com/" className="text-decoration-none"> Privacy Statement.</a>
-                    </p><br />
+                    </p>
 
                     <div className="row">
                         <button type="submit" className="btn btn-primary btn-sm">START FREE TRIAL / REGISTER</button>
@@ -208,7 +235,7 @@ const SignupForm = () => {
 
                 </Form>
             </Formik >
-        </div>
+        </div >
     );
 };
 

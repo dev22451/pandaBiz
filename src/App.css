@@ -2,7 +2,7 @@ body{
   background-image: url('/src/Images/back.jpg');
   overflow-x: hidden;
   background-size: cover;
-  background-position: bottom;
+  background-position: fixed;
 }
 
 .head-div{
@@ -82,4 +82,107 @@ body{
 
 .checkboxinput{
   margin-left: 10px;  
+}
+
+/* LoginPage.js css */
+
+.main-container{
+  height: 86vh;
+}
+
+.first-containers{
+  min-height: 86vh ;
+  background-color: lightcoral;
+}
+
+.first-containers, .second-containers{
+  padding: 20px !important;
+  text-align: center;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.services .icon{
+  font-size: 30px;
+}
+ 
+.services .service-content{
+  margin-left: 10px;
+} 
+
+.main{
+  background-color: lightgreen !important;
+}
+
+
+/* Slider CSS */
+
+.slider img{
+  width: 80% !important;
+}
+
+
+.slick-dots.slick-thumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slick-dots.slick-thumb li {
+  width: 6px;
+  height: 6px;
+  margin: 0 3px;
+  border-radius: 999px;
+  transition: all 0.5s ease-in-out;
+  will-change: width;
+  background-color: black;
+}
+
+.slick-dots.slick-thumb li.slick-active {
+  background-color: #FDE135;
+  width: 24px;
+}
+
+
+.arrow {
+  position: absolute;
+  color: #000000;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nextArrow {
+  top: 140px;
+  right: -20px;
+}
+
+.prevArrow {
+  top: 140px;
+  left: -20px;
+}
+
+/* loginform */
+
+.link-size{
+  font-size: 14px;
+}
+
+.link-right{
+  float: right;
+}
+
+hr.new1 {
+ border-top: 1px solid rgb(224, 209, 209);
+}
+
+.try-btn{
+  font-size: 14px;
+}
+
+/* forgotForm css */
+.forgot{
+  padding: 20px;
+  background: white;
+  margin: 130px;
+  border: 1px solid seashell;
 }

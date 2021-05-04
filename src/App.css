@@ -1,8 +1,19 @@
 body{
-  background-image: url('/src/Images/back.jpg');
+  /* background-image: url('/src/Images/back.jpg'); */
   overflow-x: hidden;
   background-size: cover;
   background-position: fixed;
+}
+
+
+.B {
+  background-color: bisque;
+}
+
+
+.form-control:focus {
+  border-color: #1C67D8 !important;
+  box-shadow: 0 0 5px rgb(51, 62, 170) !important;
 }
 
 .head-div{
@@ -179,10 +190,36 @@ hr.new1 {
   font-size: 14px;
 }
 
-/* forgotForm css */
-.forgot{
-  padding: 20px;
-  background: white;
-  margin: 130px;
-  border: 1px solid seashell;
+
+/* steps css */
+
+.steps ol{
+  font-size: 1.7rem;
+  font-weight: lighter;
+  list-style-type: none;
+  color: #fff;
+}
+
+.steps ol li{
+  margin-bottom: 22px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.checkmark{
+  color: #0d47a1;
+  margin-top: 7px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.stepshead{
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 28px;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1px;
+}
+
+.steps-content{
+
 }

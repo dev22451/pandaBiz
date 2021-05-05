@@ -1,8 +1,8 @@
-import { useHistory } from "react-router-dom";
-// import Main from './components/Main';
-const LoginForm = () => {
-    const history = useHistory();
+import { useHistory } from "react-router"
 
+
+const LoginForm = () => {
+    let history = useHistory();
 
     const handleSignClick = () => {
         history.push("/signup");
@@ -13,22 +13,20 @@ const LoginForm = () => {
     }
 
     const handleForget = () => {
-        history.push("/forgot")
+        history.push("/forget")
     }
-
-
     return (
-        <div className="row h-100 justify-content-center align-items-center">
-            <h5 className="text-center display-5">PandaBiz</h5>
+        <div class="row h-100 justify-content-center align-items-center">
+            <h5 className="text-center display-5">Pandabiz</h5>
             <form className="login">
                 <div className="mb-3">
                     <label htmlFor="username" className="label-form mb-1 text-muted ">Username</label>
-                    <input type="text" id="username" className="form-control" />
+                    <input type="text" id="username" class="form-control" />
                 </div>
 
                 <div className="mb-3">
                     <label htmlFor="password" className="label-form mb-1 text-muted">Password</label>
-                    <input type="password" id="password" className="form-control" />
+                    <input type="password" id="password" class="form-control" />
                 </div>
 
                 <div className="d-flex justify-content-between align-items-center mb-2">
@@ -51,10 +49,12 @@ const LoginForm = () => {
                 </div>
 
 
+
+
                 <hr className="new1" />
             </form>
             <footer>
-                <div className="text-center">
+                <div class="text-center">
                     <p className="terms text-muted">© 2021 hangingpanda.com, inc. All rights reserved. | <a href="" className="text-decoration-none">Privacy</a> </p>
                 </div>
             </footer>

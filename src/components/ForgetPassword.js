@@ -1,4 +1,4 @@
-import Forgot from "../components/Forgot"
+import ForgetPassForm from "./ForgetPassForm"
 import { GiCheckMark } from "react-icons/gi";
 
 const ForgetPassPage = () => {
@@ -27,7 +27,7 @@ const ForgetPassPage = () => {
                         </div>
 
                         <div className="col-md-5">
-                            <Forgot />
+                            <ForgetPassForm />
                         </div>
                     </div>
                 </div>

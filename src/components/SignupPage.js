@@ -1,6 +1,6 @@
 import device from '../Images/device.png'
 import icon1 from '../Images/trial-icon-1.png'
-import SignupForm from '../components/SignupForm'
+import SignupForm from './SignupForm'
 
 function SignupPage() {
     return (

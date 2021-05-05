@@ -1,9 +1,10 @@
+
 import Daco from '../Images/Daco.png';
 import device from '../Images/device.png';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
-import LoginForm from '../components/LoginForm';
+import LoginForm from './LoginForm';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 function Arrow(props) {

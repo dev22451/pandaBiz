@@ -1,8 +1,9 @@
 body{
-  /* background-image: url('/src/Images/back.jpg'); */
+  /* background-image: url('/src/Images/images.png'); */
   overflow-x: hidden;
   background-size: cover;
   background-position: fixed;
+  background-color:  #F5F6FA !important;
 }
 
 
@@ -72,7 +73,7 @@ body{
 
 .signupform{
   margin-top: 40px;
-  background: #fff;
+  background:#fff;
   padding: 30px;
 }
 
@@ -223,3 +224,60 @@ hr.new1 {
 .steps-content{
 
 }
+/* table css*/
+.table-responsive{
+  max-height:500px;
+  overflow-y:hidden;
+}
+
+.table-responsive:hover{
+overflow-y: visible;
+}
+
+/* width*/
+.table-responsive::-webkit-scrollbar {
+width: 10px;
+} 
+
+/* Track */
+ .table-responsive::-webkit-scrollbar-track {
+border-radius: 10px;
+} 
+
+/* Handle */
+ .table-responsive::-webkit-scrollbar-thumb { 
+ background: #888;  
+ border-radius: 10px; 
+ } 
+ 
+ /* Heading */
+ .heading{
+color: red;
+font-size: 25px;
+margin-left:200px ;
+ }
+
+/* Handle on hover */
+.table-responsive::-webkit-scrollbar-thumb:hover { 
+ background: #555;  
+ }  
+
+ /* chart css */
+ .chart{
+   width: 850px;
+ }
+ /* lable styles */
+
+#date_label {
+  margin-top: 20px;
+  display: block;
+  color: rgba(0, 0, 0, 0.58);
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+body.highcontrast #date_label {
+  color: white;
+}
+
+

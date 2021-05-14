@@ -17,7 +17,7 @@ const LoginForm = () => {
     }
     return (
         <div class="row h-100 justify-content-center align-items-center">
-            <h5 className="text-center display-5">Pandabiz</h5>
+            <h5 className="text-center display-5">PandaBiz</h5>
             <form className="login">
                 <div className="mb-3">
                     <label htmlFor="username" className="label-form mb-1 text-muted ">Username</label>

@@ -10,10 +10,12 @@ function SignupPage() {
                 {/* head-info */}
 
                 <div className="head-div container-fluid">
+                    <h4 className="heading">PandaBiz</h4>
                     <div className="d-flex">
+
                         <div className="logo">
-                            <h4>PandaBiz</h4>
-                        </div>
+
+                        </div><br />
                         <div className="head">
                             <span className="headfirst">Get Your FREE 30-Days Trial Now!</span><br />
                             <span className="headsecond">Sales Cloud - Professional Edition</span><br />
@@ -85,7 +87,7 @@ function SignupPage() {
                     <p>Call us at <b>000 800 001 6000</b></p>
                 </div>
             </div>
-            <div className="col-md-4"><SignupForm /></div>
+            <div className="col-md-4 mr-2"><SignupForm /></div>
         </div>
 
     )

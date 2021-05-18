@@ -2,7 +2,7 @@ const ForgetPassForm = () => {
     return (
         <div class="row h-100 justify-content-center align-items-center">
             <form className="forgot rounded">
-                <h5 className="text-center mb-3 lead" >Forgot Your Password</h5>
+                <h4 className="text-center mb-3 lead" >Forgot Your Password</h4>
                 <p className="small"> Having trouble logging in?</p>
                 <ul>
                     <li className="small">Usernames are in the form of an email address.</li>

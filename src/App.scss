@@ -1,3 +1,7 @@
+$font-size:15px;
+$margin:15px;
+
+
 body{
   /* background-image: url('/src/Images/images.png'); */
   overflow-x: hidden;
@@ -38,7 +42,7 @@ body{
 }
 
 .head{
-  margin-left: 15px; 
+  margin-left:$margin; 
 }
 
 .features{
@@ -46,7 +50,7 @@ body{
 }
 
 .features-head{
-  margin-left: 15px;
+  margin-left: $margin;
 }
 
 .headfirst{
@@ -125,6 +129,11 @@ body{
   background-color: lightgreen !important;
 }
 
+/* signuppage css */
+
+.signuppage{
+    margin-left: 30px;
+}
 
 /* Slider CSS */
 
@@ -137,9 +146,9 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
 
-.slick-dots.slick-thumb li {
+
+& li {
   width: 6px;
   height: 6px;
   margin: 0 3px;
@@ -149,11 +158,11 @@ body{
   background-color: black;
 }
 
-.slick-dots.slick-thumb li.slick-active {
+& li.slick-active {
   background-color: #FDE135;
   width: 24px;
 }
-
+}
 
 .arrow {
   position: absolute;
@@ -228,39 +237,41 @@ hr.new1 {
 .table-responsive{
   max-height:500px;
   overflow-y:hidden;
-}
 
-.table-responsive:hover{
+
+&:hover{
 overflow-y: visible;
 }
 
 /* width*/
-.table-responsive::-webkit-scrollbar {
+&::-webkit-scrollbar {
 width: 10px;
 } 
 
 /* Track */
- .table-responsive::-webkit-scrollbar-track {
+ &::-webkit-scrollbar-track {
 border-radius: 10px;
 } 
 
 /* Handle */
- .table-responsive::-webkit-scrollbar-thumb { 
+ &::-webkit-scrollbar-thumb { 
  background: #888;  
  border-radius: 10px; 
  } 
- 
+ /* Handle on hover */
+&::-webkit-scrollbar-thumb:hover { 
+  background: #555;  
+  }  
+} 
  /* Heading */
  .heading{
 color: red;
 font-size: 25px;
 margin-left:200px ;
+justify-content: center;
  }
 
-/* Handle on hover */
-.table-responsive::-webkit-scrollbar-thumb:hover { 
- background: #555;  
- }  
+
 
  /* chart css */
  .chart{
@@ -280,4 +291,22 @@ body.highcontrast #date_label {
   color: white;
 }
 
+// navbar css
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.home,
+.chart,
+.products {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}

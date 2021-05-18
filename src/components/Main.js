@@ -1,4 +1,5 @@
 import React from "react";
+import LineChart from './LineChart'
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { withStyles } from "@material-ui/core/styles";
@@ -19,7 +20,6 @@ import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
-
 const drawerWidth = 220;
 
 const styles = theme => ({
@@ -103,7 +103,9 @@ class MiniDrawer extends React.Component {
         open: false,
         anchorEl: null
     };
-
+    handlebox = () => {
+        this.setState(<LineChart />)
+    }
     handleDrawerOpen = () => {
         this.setState({ open: !this.state.open });
     };
@@ -204,7 +206,10 @@ class MiniDrawer extends React.Component {
                         {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
                             <ListItem button key={text}>
                                 <ListItemIcon>
-                                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                                    {index % 2 === 0 ? <InboxIcon
+                                        onclick={this.handlebox}
+                                    >
+                                    </InboxIcon> : <MailIcon />}
                                 </ListItemIcon>
                                 <ListItemText primary={text} />
                             </ListItem>
@@ -250,6 +255,7 @@ class MiniDrawer extends React.Component {
                         um at inventore quos eum incidunt ratione odit harum labore, error modi
           </Typography>
                     <Typography paragraph>foo</Typography>
+
                 </main>
             </div>
         );

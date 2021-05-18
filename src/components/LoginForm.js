@@ -9,7 +9,7 @@ const LoginForm = () => {
     }
 
     const handleLoginClick = () => {
-        history.push("/main")
+        history.push("/navbar")
     }
 
     const handleForget = () => {

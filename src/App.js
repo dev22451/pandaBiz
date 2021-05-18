@@ -92,7 +92,6 @@ const App = () => {
           <Route path='/' />
         </Switch>
       </Router> */}
-      {/* <LineChart /> */}
     </div >
   );
 }

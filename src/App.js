@@ -79,20 +79,6 @@ const App = () => {
           </Router>
         </Switch>
       </Router >
-      {/* <Posts posts={currentPosts} loading={loading} /><br />
-      <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} Paginate={paginate} /> */}
-      {/* <div className="col-md-8 offset-md-2 ">
-        <div className="chart">
-          <LineChart />
-        </div>
-      </div> */}
-      {/* <Router>
-        <Navbar />
-        <Switch>
-          <Route path='/' />
-        </Switch>
-      </Router> */}
-      {/* <LineChart /> */}
     </div >
   );
 }
